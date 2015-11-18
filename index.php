@@ -7,7 +7,7 @@ session_start();
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.js"></script>  
-<title>Чат! Добро пожаловать!</title>
+<title>Simple Chat! Добро пожаловать!</title>
 
 </head>
 <body>
