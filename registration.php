@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <form method="post" action="db.php" class="login">
+  <form method="post" action="reg.php" class="login">
     <p>
       <label for="login">Логин:</label>
       <input type="text" name="login" id="login" value="">
