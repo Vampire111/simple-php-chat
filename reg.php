@@ -4,7 +4,7 @@
     
     if (empty($login) or empty($password)) 
 	{
-        exit ("Вы ввели не всю информацию, вернитесь назад и заполните все поля!<br><a href="/registration.php">Вернуться на страницу регистрации</a>");
+        exit ("Вы ввели не всю информацию, вернитесь назад и заполните все поля!<br><a href='/registration.php'>Вернуться на страницу регистрации</a>");
     }
     
     $login = stripslashes($login);

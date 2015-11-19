@@ -7,7 +7,7 @@
     
     if (empty($login) or empty($password)) 
 	{
-        exit ("Вы ввели не всю информацию, вернитесь назад и заполните все поля!<br><a href="/login.php">Вернуться на страницу авторизации</a>");
+        exit ("Вы ввели не всю информацию, вернитесь назад и заполните все поля!<br><a href='/login.php'>Вернуться на страницу авторизации</a>");
     }
     
     $login = stripslashes($login);
@@ -27,7 +27,7 @@
     $myrow = mysqli_fetch_array($result);
     if (empty($myrow['password']))
     {
-        exit ("Извините, введённый вами login не существует<br><a href="/login.php">Вернуться на страницу авторизации</a> ");
+        exit ("Извините, введённый вами login не существует<br><a href='/login.php'>Вернуться на страницу авторизации</a> ");
     }
     else {
         if ($myrow['password']==$password) {
@@ -37,7 +37,7 @@
 			header( 'Location: /', true, 301 );
         }
          else {
-            exit ("Извините, введённый вами login или пароль неверный.<br><a href="/login.php">Вернуться на страницу авторизации</a>");
+            exit ("Извините, введённый вами login или пароль неверный.<br><a href='/login.php'>Вернуться на страницу авторизации</a>");
 		}
     }
 	
