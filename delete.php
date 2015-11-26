@@ -8,7 +8,7 @@ session_start();
 	
     $query = "DELETE FROM `message` WHERE id='$id' and login = '$login'" . mysqli_error($db);    
  
-    $result = mysqli_query($db, $query);
+    mysqli_query($db, $query);
 	header( 'Location: /', true, 301 );
 	
 ?>
