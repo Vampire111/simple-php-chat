@@ -17,7 +17,7 @@
       <input type="password" name="password" id="password" value="">
     </p>
     <p class="login-submit">
-      <button type="submit" class="login-button">Войти</button>
+      <button type="submit" class="login-button">Зарегистрироваться</button>
     </p>
   </form>
 </body>
