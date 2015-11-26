@@ -7,7 +7,15 @@
     
     if (empty($login) or empty($password)) 
 	{
-        exit ("Вы ввели не всю информацию, вернитесь назад и заполните все поля!<br><a href='/login.php'>Вернуться на страницу авторизации</a>");
+        exit ("
+Вы ввели не всю информацию, вернитесь назад и заполните все поля!<br>Автоматическое перенаправление
+<script language = 'javascript'>
+function redict() {
+document.location.href='/login.php';
+	}
+setTimeout(redict, 5000 );
+  
+</script>");
     }
     
     $login = stripslashes($login);
@@ -37,7 +45,14 @@
 			header( 'Location: /', true, 301 );
         }
          else {
-            exit ("Извините, введённый вами login или пароль неверный.<br><a href='/login.php'>Вернуться на страницу авторизации</a>");
+            exit ("Извините, введённый вами login или пароль неверный.<br>Автоматическое перенаправление
+			<script language = 'javascript'>
+function redict() {
+document.location.href='/login.php';
+	}
+setTimeout(redict, 5000 );
+  
+</script>");
 		}
     }
 	
